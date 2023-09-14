@@ -24,21 +24,21 @@ public class Main {
         indirimliTutar3=normalTutar-yasIndirimi3;
 
         //İf-Else koşullu ifadelerimiz
-        if (yas<=12 && select==1 && km>0){
+        if (yas>0 && yas<=12 && select==1 && km>0){
              System.out.print("Toplam Tutar: " +indirimliTutar1);
-        } else if (yas<=12 && select==2 && km>0) {
+        } else if (yas>0 && yas<=12 && select==2 && km>0) {
             System.out.print("Toplam Tutar: " +((indirimliTutar1-(indirimliTutar1*0.20))*2));
-        } else if (yas>12 && yas<=24 && select==1 && km>0) {
+        } else if (yas>0 && yas>12 && yas<=24 && select==1 && km>0) {
             System.out.print("Toplam Tutar: " +indirimliTutar2);
-        } else if (yas>12 && yas<=24 && select==2 && km>0) {
+        } else if (yas>0 && yas>12 && yas<=24 && select==2 && km>0) {
             System.out.print("Toplam Tutar: " +((indirimliTutar2-(indirimliTutar2*0.20))*2));
-        } else if (yas>=65 && select==1 && km>0) {
+        } else if (yas>0 && yas>=65 && select==1 && km>0) {
             System.out.print("Toplam Tutar: " +indirimliTutar3);
-        } else if (yas>=65 && select==2 && km>0) {
+        } else if (yas>0 && yas>=65 && select==2 && km>0) {
             System.out.print("Toplam Tutar: " +((indirimliTutar3-(indirimliTutar3*0.20))*2));
-        } else if (yas>24 && yas<65 && select==1 && km>0) {
+        } else if (yas>0 && yas>24 && yas<65 && select==1 && km>0) {
             System.out.print("Toplam Tutar: " +normalTutar);
-        } else if (yas>24 && yas<65 && select==2 && km>0) {
+        } else if (yas>0 && yas>24 && yas<65 && select==2 && km>0) {
             System.out.print("Toplam Tutar: " +normalTutar*0.20*2);
         } else{
             System.out.print("HATALI GİRİŞ YAPTINIZ!");
