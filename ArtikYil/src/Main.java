@@ -10,10 +10,16 @@ public class Main {
         System.out.print("Lütfen bir yıl giriniz: ");
         year=inp.nextInt();
         //Koşulları işledik
+        boolean artikyil=false;
         if(year%4==0){
-            System.out.print(year + " artık yıldır!");
+            if(year%100!= 0|| year%400==0 ){
+                artikyil=true;
+            }
+
+        }if(artikyil) {
+            System.out.print(year+ " bir artık yıldır.!");
         }else {
-            System.out.print(year+ " bir artık yıl değildir!");
+            System.out.print(year +"artık yıl değildir." );
         }
 
     }
