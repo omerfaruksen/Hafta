@@ -1,7 +1,9 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
+        //Değişkenlerimizi tanımlıyoruz
         int month, day;
+        //Kullanıcıdan verileri alıyoruz
         Scanner info=new Scanner(System.in);
 
 
@@ -9,6 +11,7 @@ public class Main {
         month= info.nextInt();
         System.out.print("Doğum gününüzü giriniz: ");
         day= info.nextInt();
+        //Koşullu çıktılarımız
         if((month<=12 && month>=1) && (day>=1 && day<=31)){
             if (month==1){
                 if (day>1 && day<=21){
