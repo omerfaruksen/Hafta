@@ -1,9 +1,12 @@
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
+     //Değişkenleri tanımlayalım
      int n, sayac=0;
      int total=0;
+     //Kullanıcıdan verileri alalım
      Scanner inp=new Scanner(System.in);
+     //Döngümüze başlayalım
      do {
          System.out.print("Sayı giriniz :  ");
          n= inp.nextInt();
